@@ -1,14 +1,77 @@
 @charset "UTF-8";
+
 *{
     line-height : 1.5;
     font-family : 'Objectivity';
 }
 
-body {
-    background-color :crimson;
+body{
+    margin:0px;
 }
 
-.header_centermain{
-    text-align: center;
-    font-size:3vw;
+#website-header{
+    box-shadow: 0vh 1vh 2vh 0.5vh rgb(200,200,200);
 }
+
+#header-logo{
+    width:10vh;
+    height:10vh;
+    margin-left:2vw;
+    float:left;
+}
+#header-hackathon-name{
+    font-size:5vh;
+    color:tomato;
+    line-height:1;
+    padding: 3vh 3vh 0vh 3vh;
+    overflow:visible;
+    float:left;
+}
+#menu{
+    display:inline-block;
+}
+
+#menu a{
+    display : none;
+    visibility : hidden;
+}   
+
+@media screen and (min-width: 600px){
+    #menu a{
+        visibility:visible;
+        display: inline-block;
+        padding:4vh;
+        margin:0px;
+        background-color: white;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 16px;
+        color:black;
+        transition: background-color 0.3s;
+        }
+
+    #menu a:visited{
+        color:black;
+        text-decoration: none;
+    }
+
+    #menu a:hover{
+        background-color:rgb(235, 235, 235);
+    }
+}
+
+#dropdown-menu{
+    display : none;
+    visibility : hidden;
+}
+
+@media screen and (max-width: 600px){
+    #dropdown-menu{
+        visibility:visible;
+        width:6vh;
+        height:6vh;
+        float:right;
+        margin: 2.5vh 4vh 0vh 4vh;
+    }
+}
+
