@@ -5,10 +5,10 @@
 }
 
 body {
-    background-color : tomato;
+    background-color :crimson;
 }
 
-.header_generic{
-    font-weight : bold;
-    font-size : x-large;
+.header_centermain{
+    text-align: center;
+    font-size:3vw;
 }
