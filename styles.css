@@ -1,0 +1,13 @@
+*{
+    line-height : 1.5;
+    font-family : 'Roboto', sans-serif;
+}
+
+body {
+    background-color : tomato;
+}
+
+.header_generic{
+    font-weight : bold;
+    font-size : x-large;
+}
