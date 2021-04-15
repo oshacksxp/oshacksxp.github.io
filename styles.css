@@ -12,32 +12,45 @@ body{
 #website-header{
     box-shadow: 0vh 1vh 2vh 0.5vh rgb(200,200,200);
     background-color:white;
+    width:100%;
 }
 
 #header-logo{
-    width:10vh;
-    height:10vh;
-    margin-left:2vw;
-    float:left;
+    display:none;
+    visibility: hidden;
 }
+
+@media screen and (min-width: 380px){
+    #header-logo{
+        width:11vh;
+        height:11vh;
+        margin:0.5vh 0vh 0.5vh 2vh;
+        float:left;
+        display:block;
+        visibility: visible;
+    }
+}
+
 #header-hackathon-name{
     font-size:5vh;
     color:tomato;
     line-height:1;
-    padding: 3vh 3vh 0vh 3vh;
+    padding: 3.8vh 3vh 3.8vh 3vh;
     overflow:visible;
-    float:left;
+    display:inline-block;
 }
 #menu{
     display:inline-block;
+    vertical-align:top;
+    margin-top:0.5vh;
 }
 
 #menu a{
-    display : none;
+    display: none;
     visibility : hidden;
 }   
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 786px){
     #menu a{
         visibility:visible;
         display: inline-block;
@@ -66,19 +79,20 @@ body{
     visibility : hidden;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 786px){
     #dropdown-menu{
+        display:block;
         visibility:visible;
-        width:6vh;
-        height:6vh;
         float:right;
+        width:5vh;
+        height:5vh;
         margin: 2.5vh 4vh 0vh 4vh;
     }
 }
 
 #temporary-date{
     position:absolute;
-    padding: 47vh 10vw 20vh 57vw;
+    padding: 47vh 10vw 20vh 52vw;
     font-size:24px;
     font-weight:normal;
     color:royalblue;
