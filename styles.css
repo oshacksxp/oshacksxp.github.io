@@ -89,7 +89,7 @@ body{
         float:right;
         width:5vh;
         height:5vh;
-        margin: 2.5vh 4vh 0vh 4vh;
+        padding: 3.5vh 40px 0vh 0vh;
     }
 }
 
@@ -105,11 +105,17 @@ body{
     margin:auto;
     background-color:white;
 }
+@media screen and (max-width: 786px){
+    #splash-area{
+        width:100%;
+    }
+}
 @media screen and (min-width: 1200px){
     #splash-area{
         width:1080px;
     }
 }
+
 
 
 #splash-lead{
