@@ -159,6 +159,9 @@ hr{
 @media screen and (max-width: 600px){
 
     #splash-lead{
+        font-weight:bold;
+        font-size:36px;
+        text-align:center;
         padding: 5vh 0vw 0vh 0vw;
         width: fit-content;
         margin: auto;
@@ -168,16 +171,21 @@ hr{
         visibility:hidden;
     }
     #splash-date{
+        text-align:center;
         font-size:18px;
-        padding: 10px;
+        padding: 5vh 0vw 0vh 0vw;
         width: fit-content;
-        margin: 0px;
+        margin: auto;
+        margin-bottom:15vh;
     }
     hr{
         width:90vw;
     }
     .section{
         padding:20px;
+    }
+    .section-title{
+        text-align:center;
     }
     .section-text{
         font-size:20px;
