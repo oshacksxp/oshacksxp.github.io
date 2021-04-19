@@ -1,0 +1,39 @@
+*{
+    line-height : 1.5;
+    font-family : 'Objectivity', Helvetica, Sans-Serif;
+}
+
+.announcements-title{
+    text-align:center;
+    font-weight:normal;
+    color:rgb(0, 130, 205);
+}
+
+.announcements-text{
+    font-weight:lighter;
+    font-size:16px;
+}
+
+.announcements-image{
+    width:400px;
+    float:right;
+    padding: 0px 50px 50px 50px;  
+}
+@media screen and (max-width: 600px){
+    .announcements-image{
+        width:300px;
+        margin:auto;
+        padding: 0px;
+        float:none;
+        display:block;
+    }
+}
+@media screen and (max-width: 400px){
+    .announcements-image{
+        width:200px;
+        margin:auto;
+        padding: 0px;
+        float:none;
+        display:block;
+    }
+}
