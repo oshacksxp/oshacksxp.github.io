@@ -10,81 +10,91 @@
         <link type="text/css" rel = "stylesheet" href = "fonts/objectivity-font.css">
 
         <!-- add stylesheets -->
-        <link type="text/css" rel = "stylesheet" href = "styles.css">
+        <link type="text/css" rel = "stylesheet" href = "new-styles.css">
 
         <!-- add scripts -->
         <script src = "script.js" charset="UTF-8"></script>
     </head>
 
     <body>
-        <!-- Website Menu -->
-        <header id = "website-header">
-            <img src = "images/logo_os.png" id = "header-logo"/>
-            <span id = "header-hackathon-name">DevStart</span>
+        <!-- Website Navbar -->
+        <header id = "navbar">
+            <img src = "images/logo_os_white.png" id = "navbar-logo"/>
+            <span id = "navbar-title">DevStart</span>
             <nav id = "menu">
-                <a href = "#announcements-section">News</a>
-                <a href = "#about-us-section">About Us</a>
-                <a href = "#contact-us-section">Contact Us</a>
-                <!--<b><a href = "#sign-up-section">Sign Up!</a></b>--> <!-- to be displayed May 28, 2021 -->
+                <a id = "menu-signup" href = "https://bit.ly/joinDevstart">Sign Up</a>
+                <a id = "menu-about" href = "#about">About</a>
+                <a id = "menu-news" href = "#news">News</a>
+                <a id = "menu-contact" href = "#contact">Contact</a>     
             </nav>
         </header>
 
-        <div id = "behind-header-spacer"></div> <!-- empty space behind website header / menu -->
-        <div id = "white-fade"></div>           <!-- white fade effect in the lower half of the page -->
-
-        <div id = "content">
-
-            <div id = "splash-area">
-                <h2 id = "splash-lead">A Web Development Hackathon for All</h2>
-                <h1 id = "splash-title">DevStart</h1>
-                <h2 id = "splash-date">Coming Soon this May 22 - 23, 2021</h2>
-            </div>
-
-            <div id = "announcements-section" class = "section">
-                <h2 class = "section-title">News and Announcements</h2>
-
-                <!-- Display announcements.html-->
-                <iframe id = "announcements-area" src = "announcements.html" title = "announcements">
-                </iframe>
-            </div>
-            <div id = "about-us-section" class = "section">
-                <h2 class = "section-title">What is DevStart?</h2>
-                <p class = "section-text">
-                    Have you ever wanted to join a hackathon or learn how to develop websites, but didn't know where to start? We invite you to join DevStart!
-                </p>
-                <p class = "section-text">
-                    DevStart is a two-day long hackathon that aims to empower participants with essential skills in hackathons and web development.
-                    It's completely beginner-friendly - any senior high school or college student can join, regardless of their experience!
-                </p>
-                <p class = "section-text">
-                    Participants can register in teams of 3 - 4 starting this April 28. If you don't have a team, don't worry - you can register individually, and we'll help you find a team.
-                </p>
-            </div>
-            <div id = "sign-up-section" class = "section">
-                <h2 class = "section-title">When can I sign up?</h2>
-                <p class = "section-text">
-                    Signups for the DevStart hackathon will begin this April 28 2021, and end 2 1/2 weeks later on May 17th.
-                </p>
-                <p class = "section-text">
-                    DevStart is also looking for speakers, mentors, and judges. If you're interested in becoming one, sign up at <a href = "https://bit.ly/DevStartApply">bit.ly/DevStartApply</a>. 
-                    You can read more about their roles <a href = "info-mentors.html">here.</a>
-                </p>
-            </div>
-            <div id = "contact-us-section" class = "section">
-                <h2 class = "section-title">Contact Us</h2>
-                <p class = "section-text">
-                    If you have any questions or concerns, feel free to contact us!
-                    <br/> oshacksxp@gmail.com
-                </p>
-            </div> 
-            <!--
-            <div id = "sign-up-section" class = "section">
-                <h2 class = "section-title">Sign Up for DevStart</h2>
-                <p class = "section-text">
-                    to be inserted
-                </p>
-            </div> 
-            -->
+        <!-- Hero Section -->
+        <div id = "hero-section">
+            <img src = "images/person.png" id = "hero-person"/>
+            <h1 id = "hero-title">DevStart</h1>
+            <h1 id = "hero-lead">A Web Development Hackathon for All</h1>
+            <h1 id = "hero-date">Coming this May 22-23, 2021</h1>
+            <a href = "#about"><button id = "learn-more">LEARN MORE</button></a>
         </div>
+
+        <!-- About Us -->
+
+        <div class = "basic-section" id = "about">
+            <h2 class = "section-title">What is DevStart?</h2>
+            <p class = "section-text">
+                Have you ever wanted to join a hackathon or learn how to develop websites, 
+                but didn't know where to start? We invite you to join DevStart!
+            </p>
+            <p class = "section-text">
+                DevStart is a two-day long hackathon that aims to empower participants with 
+                essential skills in hackathons and web development. It's completely 
+                beginner-friendly - any senior high school or college student can join, 
+                regardless of their experience!
+            </p>
+            <p class = "section-text">
+                Participants can register in teams of 3 - 4 starting this April 28. If you 
+                don't have a team, don't worry - you can register individually, and we'll 
+                help you find a team.
+            </p>
+        </div>
+        <!-- Signup Button -->
+        <div id = "signup" class = "basic-section">
+            <a href = "https://bit.ly/joinDevstart">
+                <button id = "signup-button">SIGN UP NOW</button>
+            </a>
+        </div>
+
+        <!-- News -->
+        <div id = "news">
+            <div id = "news-text" class = "basic-section">
+                <h2 class = "section-title">News and Announcements</h2>
+                <h2 class = "section-subtitle">We're looking for Speakers, Mentors, and Judges</h2>
+                <p class = "section-text">
+                    Though hackathons encourage newcomers, many who join without any coding 
+                    knowledge feel lost and intimidated. DevStart needs your help to provide 
+                    a better experience. We're looking for people who can host workshops 
+                    teaching web development skills. Mentors and judges experienced in 
+                    web development are also welcome!
+                </p>
+                <p class = "section-text">
+                    <a href = "info-mentors.html">You can read more about their roles here.</a>
+                </p>
+                <p class = "section-text">
+                    If you're interested, sign up at 
+                    <a href = "https://bit.ly/DevStartApply">bit.ly/DevStartApply</a>!
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div id = "contact">
+            <div id = "contact-devstart">
+                <h1>Contact Us</h1>
+                <p>If you have any questions or concerns, email us at</p>
+                <p>oshacksxp@gmail.com.</p>
+            </div>
+        </div>
+        
     </body>
 </html>
