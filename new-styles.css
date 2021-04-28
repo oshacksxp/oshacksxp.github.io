@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+*{
+    font-family : Objectivity, 'Trebuchet MS', Sans-Serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+a::after {
+    color:blueviolet;
+}
+
+body{
+    background:#F8F6F6;
+    margin:0px;
+}
+
+#navbar{
+    background-color: rgb(78, 104, 158);
+    width:100%;
+    color: #FFFFFF;
+}
+
+#navbar-logo{
+    width: 56px;
+    height: 56px;
+    margin-left: 40px;
+    margin-top: 4px;
+
+}
+
+#navbar-title{
+    position: absolute;
+    width: 195px;
+    height: 40px;
+    left: 120px;
+    top: 12px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: fit-content;
+    height: 32px;
+    right: 10px; 
+    top: 16px;
+}
+
+#menu a{
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    flex-grow: 0;
+
+    margin: 3px 19px;
+}
+
+/* HIDE NAVBAR MENU IN SMALLER SCREENS */
+@media screen and (max-width: 720px){
+    #menu{
+        display:none;
+        visibility:hidden;
+    }
+}
+
+#hero-section{
+    width: 100%;
+    height: 604px;
+    background: linear-gradient(180deg, rgba(114, 175, 249, 0) 38.98%, #76B2FC 121.49%), #3B5AA0;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+#hero-title{
+    position: absolute;
+    width: 666px;
+    height: 72px;
+    left: 80px;
+    top: 150px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 66px;
+}
+
+#hero-lead{
+    position: absolute;
+    width: 666px;
+    height: 40px;
+    left: 80px;
+    top: 260px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+#hero-date{
+    position: absolute;
+    width: 666px;
+    height: 40px;
+    left: 80px;
+    top: 310px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 33px;
+}
+#learn-more{
+    padding: 20px 32px;
+
+    position: absolute;
+    width: 299px;
+    height: 61px;
+    left: 80px;
+    top: 407px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+    text-decoration:none;
+    color: #3B5AA0;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: black;
+}
+
+#hero-person{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    right: 5vw;
+    top: 109px;
+}
+/* SHRINK HERO PERSON FOR SMALLER LAPTOPS */
+@media screen and (max-width: 1320px){
+    #hero-person{
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        right: 20px;
+        top: 109px;
+    }
+}
+
+/* REARRANGE HERO AREA FOR TABLETS */
+@media screen and (max-width: 1080px){
+    #hero-section{
+        height: 1024px;
+        color: #FFFFFF;
+    }
+    #hero-person{
+        position:relative;
+        right:auto;
+        top:20px;
+        display:block;
+        width: 550px;
+        height: 550px;
+        margin: auto;
+    }
+    #hero-title{
+        position:relative;
+        width: fit-content;
+        height: fit-content;
+        left: 0px;
+        top: 0px;
+        padding: 0px 20px;
+        margin: auto;
+    
+        font-style: normal;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 66px;
+        text-align: center;
+    }
+    #hero-lead{
+        position:relative;
+        width: fit-content;
+        height: fit-content;
+        left: 0px;
+        top:20px;
+        padding: 0px 20px;
+        margin:auto;
+    
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+    }
+    
+    #hero-date{
+        position:relative;
+        width: fit-content;
+        height: fit-content;
+        left: 0px;
+        top:30px;
+        padding: 0px 20px;
+        margin:auto;
+    
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+    }
+    #learn-more{
+        position: relative;
+        display:block;
+        width: 299px;
+        height: 61px;
+        left : 0px;
+        top: 50px;
+        margin: auto;
+    }
+}
+
+/* REDUCE FONT SIZES AND HERO PERSON FOR SMALLER SCREENS*/
+@media screen and (max-width: 720px){
+    #hero-person{
+        width:90vw;
+        height:90vw;
+    }
+    #hero-title{
+        font-size:48px;
+    }
+    #hero-lead{
+        font-size:22px;
+    }
+    #hero-date{
+        font-size:20;
+    }
+}
+/* REDUCE HERO SECTION HEIGHT ON PHONE */
+@media screen and (max-width: 550px){
+    #hero-section{
+        height: 850px;
+    }
+}
+.basic-section{
+    width:840px;
+    padding-top:40px;
+    padding-bottom:40px;
+    margin:auto;
+    color: #3B5AA0;
+}
+.section-title{
+    font-style:normal;
+    font-weight:bold;
+    font-size:32px;
+    line-height:150%;
+}
+.section-subtitle{
+    font-style:normal;
+    font-weight:bold;
+    font-size:24px;
+    line-height:150%;
+}
+.section-text{
+    font-style:normal;
+    font-weight:normal;
+    font-size:18px;
+    line-height:150%;
+}
+/* FIT TEXT AREA TO SCREEN SIZE ON SMALLER SCREENS*/
+@media screen and (max-width: 940px){
+    .basic-section{
+        width:90vw;
+        padding-top:60px;
+    }
+}
+
+#news{
+    background-color:white;
+    width:100%;
+    padding-bottom:80px;
+}
+
+#news-text{
+    color:#333333;
+}
+
+#signup-button{
+    padding: 20px 32px;
+    display:block;
+    width: 299px;
+    height: 61px;
+    margin:auto;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration:none;
+    line-height: 21px;
+    color: #3B5AA0;
+    text-align: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: black;
+}
+
+#contact{
+    margin:0px;
+    top:0px;
+    background: #3B5AA0;
+    width:100%;
+    color: #FFFFFF;
+}
+
+#contact-devstart{
+    padding: 64px 84px;
+}
+
+#contact-devstart h1{
+    font-weight:bold;
+    font-size:32px;
+}
+#contact-devstart p{
+    font-weight:normal;
+    font-size:18px;
+}
+
+
+/* REDUCE SIZE OF CONTACT US ON SMALLER SCREENS*/
+@media screen and (max-width: 640px){
+    #contact-devstart{
+        padding : 40px 20px;
+    }
+    #contact-devstart h1{
+        font-size:24px;
+    }
+    #contact-devstart p{
+        font-size:16px;
+    }
+}
+
