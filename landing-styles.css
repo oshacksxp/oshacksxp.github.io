@@ -6,6 +6,7 @@
 
 a{
     text-decoration:none;
+    color:blue;
 }
 
 body{
@@ -40,7 +41,9 @@ body{
     line-height: 31px;
     display: flex;
     align-items: center;
+    color: #FFFFFF;
 }
+
 
 #menu{
     display: flex;
@@ -295,13 +298,16 @@ body{
     }
 }
 
-#news{
+.white-area{
     background-color:white;
     width:100%;
     padding-bottom:80px;
 }
 
-#news-text{
+#news{
+    color:#333333;
+}
+#mentor-info{
     color:#333333;
 }
 
@@ -340,5 +346,11 @@ body{
     #contact-devstart p{
         font-size:16px;
     }
+}
+
+#learn-more{
+    color:blue;
+    size:20px;
+    text-decoration:underline;
 }
 
