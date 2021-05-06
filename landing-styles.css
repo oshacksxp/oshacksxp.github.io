@@ -385,12 +385,12 @@ body{
 
 /* Add a plus or minus sign after each accordion title */
 .accordion:after {
-    content: '\02795';
-    font-size: 18px;
-    color: #333333;
+    content: '\002b';
+    font-size: 32px;
+    color: #3B5AA0;
     position: relative;
     float: right;
-    bottom:28px;
+    bottom:32px;
 }
 
 
@@ -407,7 +407,7 @@ body{
 }
 
 .active:after{
-    content: "\2796";
+    content: "\2212";
 }
 
 .panel{
@@ -415,7 +415,7 @@ body{
     overflow:hidden;
     padding: 0px 18px;
     line-height:1.5;
-    font-size:22px;
+    font-size:18px;
     color:#5473bd;
 
     transition: max-height 0.4s ease-out;
