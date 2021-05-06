@@ -130,14 +130,10 @@ body{
     font-size: 30px;
     line-height: 33px;
 }
-#signup-button{
+
+.large-button{
     background-color: #FFFFFF;
     padding: 20px 0px;
-
-    position: absolute;
-    width: 299px;
-    left: 80px;
-    top: 407px;
 
     font-style: normal;
     font-weight: bold;
@@ -152,6 +148,23 @@ body{
     border-radius: 8px;
     border-width: 1px;
     border-color: black;
+}
+
+#signup-button{
+    position: absolute;
+    width: 300px;
+    left: 80px;
+    top: 410px;
+}
+
+#mentor-button{
+    position: absolute;
+    width: 160px;
+    left: 90px;
+    top: 500px;
+
+    font-size: 16px;
+    line-height: 18px;
 }
 
 #hero-person{
