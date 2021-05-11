@@ -157,9 +157,9 @@ body{
     top: 410px;
 }
 
-#mentor-button{
+#volunteer-button{
     position: absolute;
-    width: 160px;
+    width: 200px;
     left: 90px;
     top: 500px;
 
@@ -254,7 +254,7 @@ body{
         top: 80px;
         margin: auto;
     }
-    #mentor-button{
+    #volunteer-button{
         position: relative;
         display:block;
         left : 0px;
@@ -421,6 +421,9 @@ body{
     transition: max-height 0.4s ease-out;
 }
 
-
+.contact_logo{
+    height:40px;
+    margin:0px 12px;
+}
 
 
